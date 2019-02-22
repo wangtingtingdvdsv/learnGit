@@ -9,3 +9,4 @@ git push origin master
 echo "***************************"
 echo git status
 git status
+
