@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="app">
+	
+</div>
+</body>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+<script>
+const compoent = {
+  props: {
+    propOne: String,
+    prop:String
+  },
+  template: `
+    <div>
+      <input type="text" v-model="text">
+      <span @click="handleChange">{{propOne}}</span>
+      
+      <span @click="changeProp1">{{prop}}@</span>
+    </div>
+  `,
+  data () {
+    return {
+      text: 0
+    }
+  },
+  methods: {
+    handleChange () {
+      this.$emit('change')
+    },
+    changeProp1 () {
+    	this.prop = this.prop + 'w';
+    }
+  }
+}
+var com =  Vue.extend(compoent);
+console.log("com", com);
+console.log("Vue", Vue)
+new com({
+	el:"#app"
+})
+	
+// new Vue({
+//   components: {
+//     CompOne: compoent
+//   },
+//   data: {
+//     prop1: 'text1',
+//     prop2: 'w'
+//   },
+//   methods: {
+//     handleChange () {
+//       this.prop1 += 1
+//     }
+//   },
+//   mounted () {
+//     console.log(this.$refs.comp1)
+//   },
+//   el: '#app',
+//   template: `
+//     <div>
+//     	<span prop='prop2'>{{prop2}}</span>
+//       <comp-one ref="comp1" :active="true" :prop-one="prop1" @change="handleChange"></comp-one>
+//       <comp-one :active="true" propOne="text2"></comp-one>
+//     </div>
+// `
+// })
+</script>
+</html>

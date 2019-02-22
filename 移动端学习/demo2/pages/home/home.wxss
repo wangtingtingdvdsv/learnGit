@@ -1,0 +1,15 @@
+.parInfo{
+}
+.item image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.item{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 95%;
+  height: 95rpx;
+  border-bottom: 1rpx solid black;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	#grid {
+  display: -ms-grid;
+  -ms-grid-definition-columns:
+    "start"        auto
+    "track-start"  0.5fr
+    "thumb-start"  auto
+    "fill-split"   auto
+    "thumb-end"    0.5fr
+    "track-end"    auto
+    "end";
+}
+
+#lower-label { 
+  -ms-grid-start: "start";
+  background-color: white;
+}
+#track { 
+  -ms-grid-column: "track-start" / "track-end"; 
+  -ms-align-self: center;
+  background-color: blue;
+}
+#upper-label { 
+  -ms-grid-end: "end"; 
+  background-color: white;
+}
+
+#lower-fill { 
+  -ms-grid-column: "track-start" / "fill-split"; 
+  -ms-align-self: end; 
+  z-index: 5;
+  background-color: red;
+}
+#upper-fill{ 
+  -ms-grid-column: "fill-split" / "track-end"; 
+  -ms-align-self: start; 
+  z-index: 5; 
+  background-color: red;
+}
+
+#thumb{ 
+  -ms-grid-column: "thumb-start" / "thumb-end"; 
+  z-index: 10;
+  background-color: purple;
+}   
+
+	</style>
+</head>
+<body>
+	<div id="grid">
+  <div id="lower-label">Lower Label</div>
+  <div id="upper-label">Upper Label</div>
+  <div id="track">Track</div>
+  <div id="lower-fill">Lower Fill</div>
+  <div id="upper-fill">Upper Fill</div>
+  <div id="thumb">Thumb</div>
+</div>  
+
+</body>
+</html>

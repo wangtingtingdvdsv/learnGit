@@ -1,0 +1,6 @@
+<view class='parInfo'>
+  <view bindtap='homeworkInfo' class='item item{{item.id}}' wx:for="{{parInfo}}" wx:key="{{item.id}}">
+    <image src='../../image/people.png'></image>
+    <text>{{item.name}}</text>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<input placeholder="作业标题" class='title'></input>
+<view class="tui-picker-content">
+  <picker class='picker' mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+    <view class="tui-picker-detail">
+      请选择截止时间: {{showTime}}
+    </view>
+  </picker>
+</view>
+<textarea class='speak' placeholder='详细说明，限400字'>
+</textarea>
+<view class='loadPic'>
+  <text>上传图片(<text>可选，一次只能选一个，总共只能选3个</text>)</text>
+  <view class='pic'>
+    <image wx:for='{{srcs}}' src='{{item}}' id='{{item}}' bindlongtap="deletePic">
+    </image>
+    <view class='loadButt {{flag}}'  bindtap='onloadPic'>
+      <image src='../../image/load.svg' class='loadIcon'></image>
+    </view>
+  </view>
+  <text class='homework'>拍照上传作业</text>
+  <switch bindchange="switch1Change" class='switch'/>
+</view>
+<button class='publisHomework' bindtap='publisHomework'>布置作业</button>

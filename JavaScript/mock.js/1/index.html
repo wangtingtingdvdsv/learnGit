@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://code.jquery.com/jquery-latest.js">	</script>
+	<script type="text/javascript" src="http://mockjs.com/dist/mock.js"></script>
+	<script type="text/javascript" src="mock.js"></script>
+	<script type="text/javascript">
+		
+		$.ajax({
+    url: 'http://test.com',
+    type: 'get',
+    dataType: 'json'
+}).done(function(data, status, xhr) {
+    console.log(JSON.stringify(data, null, 4));
+});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

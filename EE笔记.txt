@@ -1,0 +1,57 @@
+1.margin padding
+margin和padding是在html中的盒模型的基础上出现的，margin是盒子的外边距，即盒子与盒子之间的距离，而padding是内边距，是盒子的边与盒子内部元素的距离。
+2.display属性
+值  block 此元素将显示为块级元素，此元素前后会带有换行符。
+    inline 默认。此元素会被显示为内联元素，元素前后没有换行符。
+3.position
+值 		描述
+static 		默认。位置设置为 static 的元素，它始终会处于页面流给予的位置（static 元素会忽略	任何 top	、bottom、left 或 right 声明）。
+relative 	位置被设置为 relative 的元素，可将其移至相对于其正常位置的地方，因此 "left:20" 	会将元素移至元素正常位置左边 20 个像素的位置。
+absolute 	位置设置为 absolute 的元素，可定位于相对于包含它的元素的指定坐标。此元素的位置可通过 "left"、"top"、"right" 以及 "bottom" 属性来规定。
+fixed 		位置被设置为 fixed 的元素，可定位于相对于浏览器窗口的指定坐标。此元素的位置可通过 "left"、"top"、"right" 以及"bottom" 属性来规定。
+                不论窗口滚动与否，元素都会留在那个位置。工作于 IE7（strict 模式）。
+
+4.vertical-align 属性设置元素的垂直对齐方式
+
+5.line-height 属性设置行间的距离（行高）。
+ 注释：不允许使用负值。
+6.height和line-height的区别
+<div style="height:120px;">是用来规定整个div的高度，文字还是默认会在顶端开始向下排列
+7.POST和GET方法的区别
+
+<div style="line-height:120px;"> 是规定行高的，就是一行120个像素，文字会相对于这120像素垂直居中！
+2017.10.2
+1.添加事件监听器的方法
+  *在行标签里写onlick
+  *<script type = "text/javascript"></script>
+  *采用一些方法 如：attachEvent()。
+2017.11.5
+执行顺序
+标签选择器 类选择器 id选择器 行间样式选择器
+2.javascript不害怕下标越界。
+3.javascript不遵循其他语言中的局部变量的生命域的相关定义
+4.javascript变量的生命域在函数的定义范围内
+2017.10.8
+1.只要以函数的形式定义的类，则这个类必然有prototype属性
+2.任何对象都_proto_属性
+3.Java里面的任何东西都是对象
+4.js中的任何对象的_proto_都指向其所从属的类的"原型"！
+ 原型就是类的prototype对象所指向的实例（对象, 空间）, 可以将prototype叫做"原型指针"!
+ 或者说，prototype也是对象
+5.对象Object的原类型是Function
+6.Function类型的超类是Function；即，Function的_proto_指向Function的原型；
+  Function类型的原型的超类，即，Function的prototype的_proto_指向Object的原型；
+  结论：function类型的原型的超类是Object类型。
+7.Object类型的超类是Function类型，即Object的_proto_指向Function的原型
+  结论：Object类型是Function类型的对象(指向实例的指针）
+  Object类型的原型是"根节点"！其_proto_没有再进一步指向其它js类型的原型！！！
+8.关于Object
+ *Object是类型
+ *Object的超累是Function;
+ *Object的原型是"无父的对象"；
+   且其_proto_不再指向js其它类型！
+9.关于Function
+  *Function是类
+  *Function的超类是Function
+  *Function的原型是"自链"的
+  *Function的原型的超类是Object

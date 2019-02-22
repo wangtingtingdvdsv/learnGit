@@ -1,0 +1,8 @@
+<view class="page">
+	<view>
+	</view>
+	<view>
+		<view>剧情简介</view>
+		<view>{{list.summary}}</view>
+	</view>
+</view>

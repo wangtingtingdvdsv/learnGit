@@ -1,0 +1,63 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.page-loading{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:14px;
+	padding-top:20px;
+}
+
+.page-loading .img-loading{
+	width:30rpx;
+	height:30rpx;
+}
+
+.sv{
+	height:1100rpx;
+}
+
+.page{
+	font-size:14px;
+}
+
+
+
+.mod-list{
+	display:flex;
+	padding:10rpx 20rpx;
+}
+
+.left{
+	width:200rpx;
+	height:250rpx;
+	margin-right:20rpx;
+
+}
+
+.left image{
+	width:200rpx;
+	height:250rpx;
+}
+
+.right{
+	width:500rpx;
+}
+
+.mod-list .row{
+	display:flex;
+	font-size:14px;
+	line-height:24px;
+}
+.mod-list .tag{
+	width:40px;
+}

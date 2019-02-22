@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="./js/jquery.js"></script>
+</head>
+<body>
+	 <input id="btn" type="button" value="跨域获取数据" />
+   
+</body>
+<script type="text/javascript">
+
+  $(document).ready(function () {
+            
+            $("#btn").click(function () {
+                $.ajax({
+                    url: 'http://localhost:8081/',
+                    type: 'GET',
+                   
+                    success: function (data) {
+                    	console.log(data);
+                    	console.log();
+                    },
+                    error: function(data) {
+                    	console.log("发生错误" + data.status);
+                    }
+                });
+
+            });
+            
+        });
+
+  function write(data) {
+
+</script>
+</html>

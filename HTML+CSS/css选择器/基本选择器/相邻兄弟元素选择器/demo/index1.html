@@ -1,0 +1,36 @@
+<!--https://blog.csdn.net/bingkingboy/article/details/51028339-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>兄弟元素选择器</title>
+<style type="text/css">
+
+    li{display: inline-block;margin: 0 20px;padding: 20px 40px;}
+    .nav{position: relative;}
+    .circle{position: absolute;left: 100px;bottom: -10px;background-color: #ccc;
+    width: 10px;height: 10px;border-radius: 10px;transition: all 1s;padding: 0;}
+    .a{background-color: red;}
+    .b{background-color: orange;}
+    .c{background-color: pink;}
+    li:hover{cursor: pointer;background-color: red;}
+   
+    .a + .b:hover + .c + .circle{left: 300px;}
+    .a + .b + .c:hover + .circle{left: 500px;}
+   
+</style>
+</head>
+<body>
+
+<div class="nav">
+    <ul>
+        <li class="a">第一个导航</li>
+        <li class="b">第二个导航</li>
+        <li class="c">第三个导航</li>
+        <li class="circle"></li>
+    </ul>
+</div>
+
+ 
+</body>
+</html>

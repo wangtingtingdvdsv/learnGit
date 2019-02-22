@@ -1,0 +1,20 @@
+/* pages/test/test.wxss */
+.par{
+    border-right: 1rpx solid black;
+  position: relative;
+
+}
+.bchild{
+
+  border-left: 1rpx solid red;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100rpx;
+  margin: auto 0;
+
+
+  
+
+}

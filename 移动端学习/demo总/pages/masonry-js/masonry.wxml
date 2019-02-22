@@ -1,0 +1,13 @@
+<!--pages/masonry.wxml-->
+<!-- js实现的瀑布流 -->
+<view class="container" >
+	  <view wx:for="{{group}}" style='top: {{item.top}}; left:{{item.left}}; width:{{width}}px;' class='box box-{{index}}' wx:key="{{index}}">
+ 			<image mode="widthFix" src='http://cued.xunlei.com/demos/publ/img/P_{{item.name}}.jpg'  bindload='load' data-index='{{index}}' class='image'></image>
+       <view class='desc'>{{item.desc}}</view>
+       <view class="date">{{item.date}}</view>
+	  </view>
+</view> 
+<!-- mode="widthFix"
+小程序中image如过不显示设置高度，则会应用默认高度，
+mode="widthFix" 可使小程序不应用默认高度
+ -->

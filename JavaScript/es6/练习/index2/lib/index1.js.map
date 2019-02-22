@@ -1,0 +1,1 @@
+{"version":3,"sources":["../test/index1.js"],"names":["a","console","log"],"mappings":";;AAAC,IAAI,IAAJ,EAAU;AACP;AACA,OAAIA,KAAI,CAAR;AACD;;AAEDC,QAAQC,GAAR,CAAYF,CAAZ","file":"index1.js","sourcesContent":[" if (true) {\r\n    // 重复声明一次函数f\r\n    let a = 9;\r\n  }\r\n\r\n  console.log(a);"]}

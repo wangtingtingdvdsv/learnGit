@@ -1,0 +1,8 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/teacher/teacher",
+    "pages/publish/publish",
+    "pages/parent/parent"
+  ]
+}

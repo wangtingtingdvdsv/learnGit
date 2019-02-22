@@ -1,0 +1,21 @@
+.selectClass{
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.publishButt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  background-color: #7CD6D6;
+}
+.mainTeacherClassInfo{
+  display: flex;
+  justify-content: center;
+}

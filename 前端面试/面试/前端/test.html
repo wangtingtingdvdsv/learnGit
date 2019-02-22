@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>前端算法题</title>
+</head>
+<body>
+</body>
+<script>
+    
+    function doUrl() { //1.解析 URL Params 为对象
+        let url = 'http://www.domain.com/?user=anonymous&id=123&id=456&city=%E5%8C%97%E4%BA%AC&enabled'; 
+        function parseParams(url) {
+            const paramsStr = /.+\?(.+)$/.exec(url)[1] //user=anonymous&id=123&id=456&city=%E5%8C%97%E4%BA%AC&enabled
+            var arr = paramsStr.split('&');
+            var obj={};
+            arr.forEach(function(result) {
+                var [key, value] = result.split('=');
+                value = decodeURIComponent(value) //解码
+                if(obj.hasOwnProperty(key)) {
+                    obj[key] = [].concat(obj[key], value)
+                } else {
+                    obj[key] = value;
+                }
+            })
+        }
+
+        function addURLParam(url, key, value) { //2.给url后添加查询参数
+            url += (url.indexOf('?') == -1 ? '?' : '&');
+            url += encodeURIComponent('key') + '=' + encodeURIComponent(value);
+                console.log(url);
+        }
+
+        return {
+            parseParams,
+            addURLParam
+        }       
+    }
+    // fun(1, 2, 3)
+    // fun(1)(2)(3)
+    function think(a) {
+        return function(b) {
+            return function(c) {
+                return a + b+c;
+            }
+        }
+    }
+    var sum = think(1)(2)(3);
+    console.log(sum);
+
+</script>
+</html>

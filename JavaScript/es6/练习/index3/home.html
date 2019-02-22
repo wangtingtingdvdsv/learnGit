@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>       
+    @@include('src/header.html')  
+    <div class="bodyer">  
+        <p>身体</p>  
+        <p>身体</p>  
+        <p>身体</p>  
+    </div>  
+    <!-- 下面的传参一定要用双引号 -->  
+    @@include("src/footer.html", {  
+        "footer1": "home-footer1",  
+        "footer2": "home-footer2",  
+        "footer": {  
+            "footer1": "home-footer-footer1",  
+            "footer2": "home-footer-footer2"  
+        }  
+    })  
+</body>  
+</html>

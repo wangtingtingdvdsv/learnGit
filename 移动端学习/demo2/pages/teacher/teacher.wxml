@@ -1,0 +1,11 @@
+<view class='selectClass'>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+</view>
+<view class="mainTeacherClassInfo">
+班级主页是空的
+</view>
+<button bindtap='publishHomework' class='publishButt'>发布</button>

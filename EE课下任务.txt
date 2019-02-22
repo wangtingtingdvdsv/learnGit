@@ -1,0 +1,55 @@
+1.编写HTML文件
+2.百度 什么是浏览器内核
+3.w3cschool
+4.看Bootstrap菜鸟教程
+5.下载Tomcat 8版本
+6.Css边框属性
+7.div的众多基本概念
+8.了解html中的table和style
+9.往网页中插入图片
+10.选择器顺序，以及何为选择器
+11.id选择器，class选择器，div选择器
+12.随便打开一个网页， 按F12，可以查看相关html代码
+13.掌握a标签  链接跳转
+14.掌握nav标签  nav:导航栏
+15.掌握span标签
+16.position可以设置的四个值，及含义。    position的默认值是static
+17.何为标签选择器
+18.将header的position的值设置为absolute之后，header将不再占用body的空间。
+2017.9.14
+1.CSS3颜色渐变
+2.select和option标签，结合起来用来干嘛
+3.如何让div中的文字居中
+4.试验div的各种边框样式
+5.注解的使用。
+5.阴影的设置方法
+6.伪类选择器
+7.CSS3动画
+8.transition属性
+9.ease属性
+
+2017.9.16
+1.div的position必须为relative吗
+2.CSS3 display的none属性，是否占用空间
+3.了解兄弟选择器和伪类选择器
+4.通过设置line-height可以使文字中心居中
+5.垂直居中的方法 margin ：top 0 buttom 0; auto
+6.水平居中的方法 margin: 0 auto 
+7.float到底是干什么的，以及何时使用？
+8.行标签不能设置高度吗
+9.了解inline-block
+10.em和px这两个单位的区别
+11.line-height和hight的区别
+12.span标签
+13.区分块元素和行元素。
+14.使用margin-top和padding-top时要小心，因为他们可能会将框撑大，可以使用top
+15.百度cursor属性
+16.js添加事件监听的方法
+
+2017.10.7
+1.百度自定义属性
+2.数组
+3.定时器
+4.百度 get ComputedStyle
+2017.10.29
+1.后台过滤器
