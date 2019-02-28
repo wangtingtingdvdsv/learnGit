@@ -30,7 +30,7 @@ Page({
     group: createGroup(),   
     height: [],
     cols:3,
-    flag: true,   //当left,和top没设置时，此时隐藏图片的显示
+    flag: false,   //当left,和top没设置时，此时隐藏图片的显示
   },
 
   onLoad () {
@@ -95,13 +95,15 @@ Page({
             heightArr[minBoxIndex] += (boxHeight + 20)
           }
         }
+        return group
 
+      })
+      .then((group) => {
         this.setData({
           group,
-          flag: false
         })
-        wx.hideLoading()
       })
+     
   }
 })
 

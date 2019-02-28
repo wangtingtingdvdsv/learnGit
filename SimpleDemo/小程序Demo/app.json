@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/masonry-js/masonry",
+    "pages/index/index",
     "pages/masonry-css/masonry"
   
   ],
