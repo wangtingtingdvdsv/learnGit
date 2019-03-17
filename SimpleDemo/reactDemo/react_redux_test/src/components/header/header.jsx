@@ -1,5 +1,5 @@
 
-import { Component, React} from 'react';
+import React, { Component} from 'react';
 import { NavLink } from 'react-router-dom';
 import './header.less'
 
@@ -7,13 +7,12 @@ export default class PublicHeader extends Component{
     
     render(){
         return(
-            <header>
+        
+            <header className="header-container">
+                <span className="header-link icon-jilu">目录</span>
                 <span></span>
                 <span></span>
-                <span></span>
-                <NavLink></NavLink>
-                <NavLink></NavLink>
-                <Navlink></Navlink>
+                <NavLink to=''></NavLink>
             </header>
         )
     }
