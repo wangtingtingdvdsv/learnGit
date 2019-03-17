@@ -1,0 +1,12 @@
+image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.head-r{
+  width: 400rpx;
+  display: flex;
+  justify-content:space-between;
+}
+.container{
+  display: flex;
+}

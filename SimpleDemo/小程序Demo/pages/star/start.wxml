@@ -1,0 +1,23 @@
+<view class='container'>
+
+<view class="head-r">
+  <image class="no-star" src="{{noStarUrl}}" data-num='1' catchtap="addStar" wx-if="{{activeNum<1}}"/>
+  <image class="star" src="{{starUrl}}" wx-if="{{activeNum>0 &&activeNum<=5}}" data-num='1' catchtap="addStar"/>
+  <image class="no-star" src="{{noStarUrl}}" data-num='2' catchtap="addStar" wx-if="{{activeNum<2}}"/>
+  <image class="star" src="{{starUrl}}" wx-if="{{activeNum>1 && activeNum<=5}}" data-num='2' catchtap="addStar"/>
+  <image class="no-star" src="{{noStarUrl}}" data-num='3' catchtap="addStar" wx-if="{{activeNum<3}}"/>
+  <image class="star" src="{{starUrl}}" wx-if="{{activeNum>2&& activeNum<=5}}" data-num='3' catchtap="addStar"/>
+  <image class="no-star" src="{{noStarUrl}}" data-num='4' catchtap="addStar" wx-if="{{activeNum<4}}"/>
+  <image class="star" src="{{starUrl}}" data-num='4' wx-if="{{activeNum>3 && activeNum<=5}}" catchtap="addStar"/>
+  <image class="no-star" src="{{noStarUrl}}" data-num='5' catchtap="addStar" wx-if="{{activeNum<5}}"/>
+  <image class="star" src='{{starUrl}}' wx-if="{{activeNum==5}}" data-num='5' catchtap="addStar"/>
+</view>
+<view class='title'>
+  <label class="praise" wx-if="{{activeNum==5}}">非常好</label>
+  <label class="praise" wx-if="{{activeNum==4}}">好</label>
+  <label class="praise" wx-if="{{activeNum==3}}">中等</label>
+  <label class="praise" wx-if="{{activeNum==2}}">一般</label>
+  <label class="praise" wx-if="{{activeNum==1}}">差</label> 
+</view>
+
+</view>
