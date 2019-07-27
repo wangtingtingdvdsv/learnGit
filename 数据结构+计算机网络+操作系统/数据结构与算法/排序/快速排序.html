@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<style>
+
+</style>
+</head>
+<body>
+
+</body>
+<script>
+var arr = [44,37,345,35,57,68,38,78,45,87];
+
+// 交换两个值
+function swap(arr, i, j) {
+  tmp = arr[i];
+  arr[i] = arr[j];
+  arr[j] = tmp;
+}
+function quickSort(arr, start, end){
+  let low = start;
+  let high = end;
+  let value = arr[low];
+  if(end - start <= 1) {
+    return;
+  }
+  while(low < high){
+    while(low < high && arr[high] > value) {
+        --high;
+    }
+    swap(arr, low, high);
+    while(low < high && arr[low] < value) {
+        ++low;
+    }
+    swap(arr, low, high);
+  } 
+  quickSort(arr,start, low-1)
+  quickSort(arr, low+1, end)
+}
+quickSort(arr, 0, arr.length - 1);
+console.log(arr);
+</script>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>computed</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<style type="text/css">
+		
+    *{padding:0;margin:0;}
+    .scroll-box{
+        width : 100%;
+        height : 500px;
+        background:blue;
+        overflow : auto;
+    }    
+    .scroll-item{
+        height:1000px;
+        width:100%;
+    }
+</style>
+
+
+</head>
+<body>
+	<header></header>
+	<section>
+	<div class="scroll-box" onscroll="bb()">
+    <div class="scroll-item"></div>
+</div>
+	</section>
+	<footer></footer>
+</body>
+<script>
+ 	
+       		 var scrollBox = document.getElementsByClassName('.scroll-box')[0]  //调用执行函数;
+           
+        
+        //调用throttle函数，传入相应的方法和规定的时间;
+        var thro = throttle(throFun,300);
+        //触发事件;
+       
+
+       function bb() {
+       		 //调用执行函数;
+            thro();
+       }
+          
+
+
+
+
+        // 封装函数;    
+        function throttle(method,time){
+            var timer = null;
+            var startTime = new Date();
+            return function(){
+                var context = this;
+                var endTime = new Date();
+                var resTime = endTime - startTime;
+                //判断大于等于我们给的时间采取执行函数;
+                if(resTime >= time){
+                    method.call(context);
+                    //执行完函数之后重置初始时间，等于最后一次触发的时间
+                    startTime = endTime;
+                }
+            }
+        }
+        function throFun(){
+            console.log('success');
+        }
+    
+    
+</script>
+
+</html>
