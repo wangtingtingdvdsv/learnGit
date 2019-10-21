@@ -1,11 +1,11 @@
-<!-- 
+<!--
 虚拟列表
 参考链接
 https://juejin.im/entry/5aaf66f56fb9a028c71e403e
 -->
 <template>
   <div class="list-view" @scroll="handleScroll">
-    <div class="list-view-phantom"       
+    <div class="list-view-phantom"
       :style="{
          height: contentHeight
       }">
@@ -17,7 +17,7 @@ https://juejin.im/entry/5aaf66f56fb9a028c71e403e
         }"
         :key="item.index"
         v-for="item in visibleData">
-        {{ item.value }} 
+        {{ item.value }}
       </div>
     </div>
   </div>
@@ -25,7 +25,7 @@ https://juejin.im/entry/5aaf66f56fb9a028c71e403e
 <script>
 export default {
     name: 'ListView',
-    
+
     props: {
         data: {
             type: Array,
@@ -37,7 +37,7 @@ export default {
         default: 30
         }
   },
-  
+
   computed: {
     contentHeight() {
         return this.data.length * this.itemHeight + 'px';
@@ -46,8 +46,8 @@ export default {
 
   mounted() {
     this.updateVisibleData();
-   
-    
+
+
   },
 
   data() {
